@@ -9,6 +9,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
   <img src="./public/images/screenshot4.png" width="45%" />
 </div>
 
+## 📝 Credits
+This project was autonomously designed and implemented by **Gemini CLI** in collaboration with the user.
+
 ## 🚀 Getting Started
 
 First, run the development server:

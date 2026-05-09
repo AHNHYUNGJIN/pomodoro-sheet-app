@@ -1,6 +1,7 @@
 # Technical Requirements Document (TRD): Pomodoro & Todo System
 
 ## 1. System Architecture
+- **Orchestrator**: **Gemini CLI** (Leader Agent)
 - **Framework**: Next.js 16 (App Router)
 - **Styling**: Tailwind CSS 4.0
 - **Animations**: Framer Motion

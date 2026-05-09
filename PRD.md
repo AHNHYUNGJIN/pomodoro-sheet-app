@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: Pomodoro & Todo Focus App
-- **Objective**: 시각적으로 뛰어난 '애플 스타일'의 UI를 통해 사용자의 집중력을 높이고, 구글 스프레드시트와 실시간 연동되는 투두 리스트를 제공하여 생산성을 관리합니다.
+- **Objective**: 시각적으로 뛰어난 '애플 스타일'의 UI를 통해 사용자의 집중력을 높이고, 구글 스프레드시트와 실시간 연동되는 투두 리스트를 제공하여 생산성을 관리합니다. (Created with **Gemini CLI**)
 - **Target Audience**: 세련된 디자인을 선호하며, 익숙한 도구(구글 시트)로 작업 내역을 관리하고 싶은 개인 사용자 및 지식 노동자.
 
 ## 2. Core Features
