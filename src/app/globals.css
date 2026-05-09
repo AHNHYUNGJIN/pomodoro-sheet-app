@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f7;
+  --foreground: #1d1d1f;
+  --apple-blue: #0071e3;
+  --apple-gray: #86868b;
+  --apple-card: rgba(255, 255, 255, 0.7);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-apple-blue: var(--apple-blue);
+  --color-apple-gray: var(--apple-gray);
+  --color-apple-card: var(--apple-card);
+  --font-sans: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #f5f5f7;
+    --apple-card: rgba(28, 28, 30, 0.7);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass {
+  background: var(--apple-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.apple-shadow {
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.04);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Button styles without complex @apply */
+.apple-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.apple-button:active {
+  transform: scale(0.95);
+}
+
+.apple-button-primary {
+  background-color: var(--apple-blue);
+  color: white;
+}
+
+.apple-button-primary:hover {
+  opacity: 0.9;
 }
